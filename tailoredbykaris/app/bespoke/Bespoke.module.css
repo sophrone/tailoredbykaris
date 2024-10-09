@@ -1,0 +1,52 @@
+.bespokeContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.bespokeSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.bespokeImage {
+  width: 50%;
+  height: 70vh;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 5px solid #d4af37;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bespokeImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.bespokeText {
+  width: 50%;
+}
+
+.bespokeText h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .bespokeSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bespokeImage {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .bespokeText {
+    width: 100%;
+  }
+}

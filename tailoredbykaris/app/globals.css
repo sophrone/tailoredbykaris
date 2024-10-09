@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v35/0QI6MX1D_JOuGQbT0gvTJPa787weuyJG.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v35/0QI6MX1D_JOuGQbT0gvTJPa787z5vCJG.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf)
+    format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  color: #2b2b2b;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #d4af37;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #b59b30;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #7b7b7b;
+}
+
+a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #b59b30;
+}
+
+header {
+  background: #fff4e1;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 2;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .logo {
+    flex: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fff4e1;
+  color: #333;
+}

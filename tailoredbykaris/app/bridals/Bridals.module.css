@@ -1,0 +1,52 @@
+.bridalsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.bridalsSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.bridalsImage {
+  width: 50%;
+  height: 70vh;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 5px solid #d4af37;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bridalsImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.bridalsText {
+  width: 50%;
+}
+
+.bridalsText h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .bridalsSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bridalsImage {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .bridalsText {
+    width: 100%;
+  }
+}
