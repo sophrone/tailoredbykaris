@@ -1,20 +1,45 @@
 .bridalsContainer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 0.8s forwards;
+  text-align: center;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bridalsTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.bridalsSubtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .bridalsSection {
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
 .bridalsImage {
-  width: 50%;
-  height: 70vh;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
   object-fit: cover;
-  margin-right: 1rem;
   border: 5px solid #d4af37;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -26,27 +51,14 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.bridalsText {
-  width: 50%;
-}
-
-.bridalsText h2 {
-  margin-top: 0;
-}
-
 @media (max-width: 768px) {
   .bridalsSection {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .bridalsImage {
     width: 100%;
-    margin-right: 0;
     margin-bottom: 1rem;
-  }
-
-  .bridalsText {
-    width: 100%;
   }
 }

@@ -9,6 +9,25 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 0.8s forwards;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .videoSection {
@@ -52,4 +71,30 @@
   font-size: 1rem;
   max-width: 600px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .videoDescription h2 {
+    font-size: 1.5rem;
+  }
+
+  .videoDescription p {
+    font-size: 0.9rem;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  .videoDescription {
+    margin-top: 15px;
+  }
 }

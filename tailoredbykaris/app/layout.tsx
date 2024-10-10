@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Header /> 
                 <main>{children}</main>
                 <footer>
-                    <p>&copy; 2024 Tailored by Karis</p>
+                    <p>&copy; 2024 Tailored By Karis</p>
                 </footer>
             </body>
         </html>

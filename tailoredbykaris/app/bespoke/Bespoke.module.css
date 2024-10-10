@@ -2,19 +2,46 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 0.8s forwards;
+  text-align: center; /* Center all text in the container */
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bespokeTitle {
+  font-size: 2.5rem; /* Increase font size for the title */
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+.bespokeSubtitle {
+  font-size: 1.2rem; /* Subtitle font size */
+  margin-bottom: 2rem; /* Space below the subtitle */
 }
 
 .bespokeSection {
-  display: flex;
-  align-items: center;
   margin-bottom: 2rem;
 }
 
+.bespokeImageWrapper {
+  margin-bottom: 0.5rem;
+}
+
 .bespokeImage {
-  width: 50%;
-  height: 70vh;
+  width: 80%;
+  height: auto;
+  max-width: 600px;
   object-fit: cover;
-  margin-right: 1rem;
   border: 5px solid #d4af37;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -27,7 +54,8 @@
 }
 
 .bespokeText {
-  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .bespokeText h2 {
@@ -36,14 +64,11 @@
 
 @media (max-width: 768px) {
   .bespokeSection {
-    flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
   }
 
   .bespokeImage {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 1rem;
   }
 
   .bespokeText {

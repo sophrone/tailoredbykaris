@@ -20,9 +20,9 @@ export default function Home() {
                     Your browser does not support the video tag.
                 </video>
                 <div className={styles.videoDescription}>
-                    <h2>Our Craftsmanship</h2>
+                    <h2>STYLE, POISE, ELEGANCE</h2>
                     <p>
-                        At Tailored by Karis, we blend tradition with modern design to create bespoke clothing that speaks to your unique style.
+                        The Tailored By Karis (TBK) woman exudes these with confidence as she gracefully stands out of the crowd.
                     </p>
                 </div>
             </section>
